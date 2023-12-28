@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:text="发起投票" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="1.投票内容"></TextView>
+    <EditText
+        android:id="@+id/initiate_title"
+        android:layout_width="160dp"
+        android:background="@drawable/shape"
+        android:hint="请输入"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="2.发起人"></TextView>
+    <EditText
+        android:id="@+id/initiate_num"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape"
+        android:hint="请输入学号">
+
+    </EditText>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/initiate_person"
+            android:layout_width="160dp"
+            android:background="@drawable/shape"
+            android:hint="请输入姓名"
+            android:layout_margin="5dp"
+
+            android:layout_height="wrap_content"></EditText>
+        <Button
+            android:id="@+id/btn_yz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="验证">
+
+        </Button>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="3.投票人员"></TextView>
+
+    <ListView
+        android:id="@+id/lv_users"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        ></ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="4.定义单选内容"></TextView>
+
+
+<!--    自定义单选内容-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:background="@drawable/shape"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayout_info"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <Spinner
+                android:id="@+id/sq_info1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入选项内容"></Spinner>
+            <Spinner
+                android:id="@+id/sq_info2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入选项内容"></Spinner>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_etadd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/linearLayout_info"
+            android:src="@drawable/addcheng"></ImageView>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <Button
+                android:id="@+id/initiate_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#747A9E"
+                android:text="返回"></Button>
+            <Button
+                android:id="@+id/initiate_btn_FaBu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#747A9E"
+                android:text="发布"></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

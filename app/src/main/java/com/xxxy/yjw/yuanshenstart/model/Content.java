@@ -4,6 +4,16 @@ public class Content {
     private int contentid;
     private String  contentshow;
 
+    public String getContentimg() {
+        return contentimg;
+    }
+
+    public void setContentimg(String contentimg) {
+        this.contentimg = contentimg;
+    }
+
+    private String contentimg;
+
     public int getContentid() {
         return contentid;
     }
@@ -28,12 +38,12 @@ public class Content {
     public Content() {
     }
 
-
     @Override
     public String toString() {
-        return "content{" +
+        return "Content{" +
                 "contentid=" + contentid +
                 ", contentshow='" + contentshow + '\'' +
+                ", contentimg='" + contentimg + '\'' +
                 '}';
     }
 }

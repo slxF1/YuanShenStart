@@ -33,6 +33,12 @@ android {
 
 dependencies {
 
+    implementation ("com.google.code.gson:gson:2.8.5")
+    implementation ("com.squareup.okhttp3:okhttp:3.14.9")
+    implementation ("com.squareup.okio:okio:3.0.0")
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
+    implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
+
     implementation("mysql:mysql-connector-java:5.1.49")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.8.0")

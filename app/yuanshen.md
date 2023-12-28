@@ -32,7 +32,11 @@
    1. 主键
    2. 内容名称
 
+内容选项表
 
+1. 主键
+2. title
+3. 选项
 
 
 
@@ -116,3 +120,8 @@ select u.users_uname from users u
                     where v.voters_flag = 1
 ```
 
+
+
+
+
+前端放入List<Map<key,value>>传值
