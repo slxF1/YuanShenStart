@@ -301,6 +301,7 @@ public class InitiateVoteActivity extends AppCompatActivity {
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                         CheckBox checkBox = view.findViewById(R.id.ck_useritem);
+//                        checkBox.setChecked(false);
                         if (!checkBox.isChecked()) {
                             checkBox.setChecked(true);
                             TextView username = view.findViewById(R.id.tv_useritem_name);

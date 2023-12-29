@@ -110,13 +110,7 @@ public class MakeTheLayoutActivity extends AppCompatActivity {
                 Intent intent = new Intent(MakeTheLayoutActivity.this, VoteResultsActivity.class);
                 intent.putExtra("title", title);
                 startActivity(intent);
-//                else {
-//                    Toast.makeText(getApplicationContext(),"您不在投票人选范围内",Toast.LENGTH_SHORT).show();
-//                    Intent intent = new Intent(MakeTheLayoutActivity.this, VoteResultsActivity.class);
-//                    intent.putExtra("title", title);
-//                    startActivity(intent);
-//                }
-
+                finish();
             }
         });
     }
@@ -191,4 +185,14 @@ public class MakeTheLayoutActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+
+
+
+
+
+
+
 }

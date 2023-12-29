@@ -76,6 +76,7 @@ public class RadiosListAdapter extends BaseAdapter {
                     states.put(key, false);
                 }
                 states.put(String.valueOf(i), true);
+//                通知适配器数据集发生了变化,需要更新界面的方法
                 RadiosListAdapter.this.notifyDataSetChanged();
             }
         });

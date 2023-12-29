@@ -17,7 +17,7 @@
    2. 标题
    3. 作者名 -- 通过users关联获取
    4. 所选内容选项编号 --内容表关联
-   5. 时间b
+   5. 时间
 3. 投票记录表（vote_records）：
    1. 主键
    2. 投票表主键
@@ -26,7 +26,7 @@
 4. 投票人员表（voters）：
    1. 主键
    2. 用户编号 --user表关联
-   3. 投票编号 -- 投票关联
+   3. 投票主题编号 -- 投票关联
    4. 是否投票
 5. 所有内容表(content)：
    1. 主键
@@ -125,3 +125,9 @@ select u.users_uname from users u
 
 
 前端放入List<Map<key,value>>传值
+
+
+
+1. 首页MainActivity 向TPServlet发请求获取所有的投票信息并展示，TPServlet，查询所有
+2. 点击投票传标题开始进行投票
+

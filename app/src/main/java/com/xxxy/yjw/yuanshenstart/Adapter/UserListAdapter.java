@@ -4,13 +4,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.CheckBox;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
+import com.xxxy.yjw.yuanshenstart.Holder.UserHoder;
 import com.xxxy.yjw.yuanshenstart.R;
 import com.xxxy.yjw.yuanshenstart.model.Users;
 
@@ -50,13 +47,15 @@ public class UserListAdapter extends BaseAdapter {
             userHoder = new UserHoder();
 
             userHoder.tv_name = view.findViewById(R.id.tv_useritem_name);
+            userHoder.ck_useritem = view.findViewById(R.id.ck_useritem);
+
 
             view.setTag(userHoder);
         }else {
             userHoder = (UserHoder) view.getTag();
         }
 
-
+//        userHoder.ck_useritem.setChecked(false);
         userHoder.tv_name.setText(userList.get(i).getUserName());
         return view;
     }

@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         sw_fresh.setRefreshing(false);
                     }
-                },1000);
+                },500);
             }
         });
 
